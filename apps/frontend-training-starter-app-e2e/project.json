@@ -1,0 +1,16 @@
+{
+  "name": "frontend-training-starter-app-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/frontend-training-starter-app-e2e/src",
+  "projectType": "application",
+  "tags": ["type:app"],
+  "implicitDependencies": ["frontend-training-starter-app"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["apps/frontend-training-starter-app-e2e/**/*.ts"]
+      }
+    }
+  }
+}
